@@ -1,0 +1,8 @@
+🔐 Explicação do tratamento de segurança:
+authenticate é um middleware que intercepta a requisição antes do endpoint;
+
+Ele checa o header Authorization;
+
+Se o token for válido (Bearer meu-token-seguro), o acesso é liberado;
+
+Se for inválido ou ausente, retorna HTTP 401 com uma mensagem genérica.
