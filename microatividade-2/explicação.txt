@@ -1,0 +1,8 @@
+🧠 Explicação rápida:
+Controla tentativas falhas com tentativas armazenadas no dicionário.
+
+Verifica tamanho mínimo da senha com len(password).
+
+A senha pode conter qualquer caractere.
+
+A mensagem de erro para falhas é genérica.
