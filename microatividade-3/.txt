@@ -1,0 +1,14 @@
+✅ O que foi implementado:
+Backend:
+Token inclui exp no payload (tempo de expiração).
+
+Usa jwt.verify() para validar token e tempo.
+
+Responde com erro genérico se o token estiver inválido ou vencido.
+
+Frontend:
+Ao fazer login, salva o token e o exp localmente.
+
+Antes de enviar o token, valida se ele ainda é válido.
+
+Se expirado, bloqueia a requisição e redireciona.
