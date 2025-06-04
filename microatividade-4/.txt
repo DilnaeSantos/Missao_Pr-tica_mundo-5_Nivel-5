@@ -1,0 +1,6 @@
+✅ O que foi feito:
+O valor do id é passado como parâmetro separado, não concatenado diretamente.
+
+O MySQL prepara e escapa o valor, impedindo que comandos maliciosos sejam executados.
+
+Mesmo que o usuário envie id=' OR '1'='1--, o banco interpreta isso como uma string, e não executa código.
