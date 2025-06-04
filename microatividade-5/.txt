@@ -1,0 +1,8 @@
+✅ O que esse código faz:
+Evita CRLF Injection ao rejeitar qualquer \r ou \n no valor da URL.
+
+Bloqueia redirecionamento para domínios externos: parse_url(..., PHP_URL_HOST) garante que só URLs internas (sem host) são aceitas.
+
+Usa regex restritiva opcional para permitir apenas caminhos comuns como /pagina, /user-perfil, etc.
+
+Fallback seguro redirecionando para /home se algo suspeito for detectado.
